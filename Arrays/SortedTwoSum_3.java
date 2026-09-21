@@ -4,13 +4,15 @@ public class SortedTwoSum_3 {
         int right = 0;
         int left = 1;
        
-       int count = 1;
+       int count = 0;
+   
 
         while(right < numbers.length-1)
         {
             if(numbers[right] == numbers[left])
             {
-                                                      
+                
+                                              
                 right++;
                 
                 left++;
@@ -19,18 +21,21 @@ public class SortedTwoSum_3 {
                 count += 1;
                 right++;
                 left++;
-                                                                      
-            }
+            }                                                    
+            
+            
         }
-                                                               
+                                               
 
-        return count;
+        return count + 1;
     }
     public static void main(String[] args) {
         
-        int num[] = {1, 2, 3, 4, 5};
+        int num[] = {1, 1, 2, 3, 3, 3, 4};
         int result = removeDuplicates(num);
         System.out.println(result);
+      
+        
     }
     
 }
