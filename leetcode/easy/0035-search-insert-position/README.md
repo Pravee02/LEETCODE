@@ -46,9 +46,9 @@ Output: 4
 ## Solution
 
 **Language:** Java  
-**Runtime:** 0 ms  
-**Memory:** 42.5 MB  
-**Submitted:** 2026-10-04T16:23:19.974Z  
+**Runtime:** 0 ms (beats 100.00%)  
+**Memory:** 44.6 MB (beats 82.96%)  
+**Submitted:** 2026-10-04T16:26:51.959Z  
 
 ```java
 class Solution {
@@ -76,7 +76,7 @@ class Solution {
                 right = mid - 1;
             }
         }
-           if(target <= nums[mid] || target ==0 || length == 0)
+           if(target <= nums[mid]  )
            {
             return mid ;
            }
