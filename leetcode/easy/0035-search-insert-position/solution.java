@@ -23,7 +23,7 @@ class Solution {
                 right = mid - 1;
             }
         }
-           if(target <= mid)
+           if(target <= mid || target ==0 || length == 0)
            {
             return mid ;
            }
