@@ -51,26 +51,23 @@ Explanation: There are no characters in letters that is lexicographically greate
 
 **Language:** Java  
 **Runtime:** 0 ms (beats 100.00%)  
-**Memory:** 46.5 MB (beats 14.99%)  
-**Submitted:** 2026-10-04T16:47:12.855Z  
+**Memory:** 46.3 MB (beats 50.99%)  
+**Submitted:** 2026-10-04T16:48:41.290Z  
 
 ```java
 class Solution {
     public char nextGreatestLetter(char[] letters, char target) {
-        int found = 0;
-        char result = 'a';
+        
         for(int i =0 ; i <= letters.length-1 ; i++)
         {
             if(letters[i] > target )
             {
-                 found = 1;
+                
                 return letters[i];
            
             }
-            if(found == 0)
-            result = letters[0];
         }
-        return result;
+        return letters[0];
     }
 }
 ```
