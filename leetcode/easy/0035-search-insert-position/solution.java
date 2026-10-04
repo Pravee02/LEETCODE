@@ -23,13 +23,13 @@ class Solution {
                 right = mid - 1;
             }
         }
-           if(length < 1 || target == 0 )
+           if(target <= mid)
            {
-            return 0;
+            return mid ;
            }
-           
-           else{
-            return mid + 1 ;
+           else
+           {
+            return mid+1 ;
            }
     }
 }
