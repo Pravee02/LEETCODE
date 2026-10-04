@@ -47,8 +47,8 @@ Output: 4
 
 **Language:** Java  
 **Runtime:** 0 ms  
-**Memory:** 42.5 MB  
-**Submitted:** 2026-10-04T16:18:13.788Z  
+**Memory:** 42.8 MB  
+**Submitted:** 2026-10-04T16:20:59.343Z  
 
 ```java
 class Solution {
@@ -76,13 +76,13 @@ class Solution {
                 right = mid - 1;
             }
         }
-           if(length < 1 || target == 0 )
+           if(target <= mid)
            {
-            return 0;
+            return mid ;
            }
-           
-           else{
-            return mid + 1 ;
+           else
+           {
+            return mid+1 ;
            }
     }
 }
