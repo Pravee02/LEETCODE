@@ -23,7 +23,7 @@ class Solution {
                 right = mid - 1;
             }
         }
-           if(target <= mid || target ==0 || length < 1)
+           if(target <= nums[mid] || target ==0 || length == 0)
            {
             return mid ;
            }
