@@ -23,10 +23,11 @@ class Solution {
                 right = mid - 1;
             }
         }
-           if(target == 0)
+           if(length < 1 || target == 0 )
            {
             return 0;
            }
+           
            else{
             return mid + 1 ;
            }
