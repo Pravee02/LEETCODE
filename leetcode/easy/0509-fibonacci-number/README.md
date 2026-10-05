@@ -54,7 +54,7 @@ Explanation: F(4) = F(3) + F(2) = 2 + 1 = 3.
 **Language:** Java  
 **Runtime:** 0 ms (beats 100.00%)  
 **Memory:** 41.9 MB (beats 69.81%)  
-**Submitted:** 2026-10-05T15:42:15.296Z  
+**Submitted:** 2026-10-05T15:42:42.366Z  
 
 ```java
 class Solution {
@@ -90,8 +90,8 @@ class Solution {
             second = third;
             n--;
         }
-        second = first;
-        return second;
+        
+        return first;
     }
 }
 ```
