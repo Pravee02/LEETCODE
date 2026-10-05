@@ -31,7 +31,7 @@ class Solution {
             second = third;
             n--;
         }
-        second = first;
-        return second;
+        
+        return first;
     }
 }
