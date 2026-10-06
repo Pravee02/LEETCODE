@@ -62,8 +62,8 @@ The array already satisfies the condition. Therefore, no swap operations are nee
 
 **Language:** Java  
 **Runtime:** 0 ms  
-**Memory:** 42.3 MB  
-**Submitted:** 2026-10-06T16:36:03.587Z  
+**Memory:** 42.6 MB  
+**Submitted:** 2026-10-06T16:36:37.584Z  
 
 ```java
 class Solution {
@@ -74,7 +74,7 @@ class Solution {
         {
             if(i < j)
             {
-            while(nums[i] != 0 )
+            while(nums[i] != 0 && i < j)
             {
                 i++;
             }
