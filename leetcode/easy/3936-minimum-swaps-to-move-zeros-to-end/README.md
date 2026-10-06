@@ -61,9 +61,9 @@ The array already satisfies the condition. Therefore, no swap operations are nee
 ## Solution
 
 **Language:** Java  
-**Runtime:** 0 ms  
-**Memory:** 42.6 MB  
-**Submitted:** 2026-10-06T16:36:37.584Z  
+**Runtime:** 1 ms (beats 99.53%)  
+**Memory:** 46.2 MB (beats 82.35%)  
+**Submitted:** 2026-10-06T16:36:43.223Z  
 
 ```java
 class Solution {
