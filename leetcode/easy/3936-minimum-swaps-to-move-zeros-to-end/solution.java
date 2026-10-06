@@ -6,7 +6,7 @@ class Solution {
         {
             if(i < j)
             {
-            while(nums[i] != 0 )
+            while(nums[i] != 0 && i < j)
             {
                 i++;
             }
