@@ -41,8 +41,8 @@ Output: [0]
 
 **Language:** Java  
 **Runtime:** 2 ms (beats 91.45%)  
-**Memory:** 48.1 MB (beats 6.90%)  
-**Submitted:** 2026-10-06T15:30:23.855Z  
+**Memory:** 47.8 MB (beats 37.84%)  
+**Submitted:** 2026-10-07T12:28:03.434Z  
 
 ```java
 class Solution {
@@ -96,10 +96,13 @@ class Solution {
                 int temp = nums[right];
                 nums[right] = nums[left];
                 nums[left]=temp;
-                left++;
+                left++; 
 
             }
         }
+
+
+    
      }
 }
 ```
