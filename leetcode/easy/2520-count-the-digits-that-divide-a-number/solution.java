@@ -6,11 +6,11 @@ class Solution {
         while(num > 0)
         {
             int value = num % 10;
+            num = num / 10;
             if(original % value == 0)
             {
             count++;
-            }
-            num = num / 10; 
+            } 
         }
         return count;
     }
