@@ -48,8 +48,8 @@ Explanation: 1248 is divisible by all of its digits, hence the answer is 4.
 
 **Language:** Java  
 **Runtime:** 0 ms (beats 100.00%)  
-**Memory:** 42.1 MB (beats 55.30%)  
-**Submitted:** 2026-10-07T11:13:27.421Z  
+**Memory:** 41.9 MB (beats 86.82%)  
+**Submitted:** 2026-10-07T11:15:16.251Z  
 
 ```java
 class Solution {
@@ -60,11 +60,11 @@ class Solution {
         while(num > 0)
         {
             int value = num % 10;
+            num = num / 10;
             if(original % value == 0)
             {
             count++;
-            }
-            num = num / 10; 
+            } 
         }
         return count;
     }
