@@ -8,7 +8,7 @@ class Solution {
         int sum = 0;
         //int num = 1;
         do{
-            while(n > 1)
+            while(n > 0)
             {
                 int digit = n % 10;
                 int square = digit * digit;
