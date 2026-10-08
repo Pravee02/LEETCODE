@@ -8,12 +8,12 @@ class Solution {
         int sum = 0;
         //int num = 1;
         do{
-            while(n > 0)
+            while(n > 1)
             {
                 int digit = n % 10;
                 int square = digit * digit;
                 sum = sum + square;
-                n = n /10;
+                n = n / 10;
             }
             if(sum == 1)
             {
@@ -21,10 +21,10 @@ class Solution {
             }
             else
             {
-                sum = n;
+                n = sum;
             }
         }
-        while(sum > 0);
+        while(n > 0);
         return false;
     }
 }
