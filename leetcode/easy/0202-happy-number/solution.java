@@ -5,9 +5,10 @@ class Solution {
         {
             return true;
         }
-        int sum = 0;
+        
         //int num = 1;
         do{
+            int sum = 0;
             while(n > 0)
             {
                 int digit = n % 10;
@@ -15,7 +16,7 @@ class Solution {
                 sum = sum + square;
                 n = n / 10;
             }
-            if(sum == 1)
+            if(sum == 1 || sum == 7)
             {
                 return true;
             }
@@ -24,7 +25,7 @@ class Solution {
                 n = sum;
             }
         }
-        while(n > 0);
+        while(n > 9);
         return false;
     }
 }
