@@ -46,9 +46,9 @@ Output: false
 ## Solution
 
 **Language:** Java  
-**Runtime:** 938 ms  
-**Memory:** 42.1 MB  
-**Submitted:** 2026-10-08T17:34:23.014Z  
+**Runtime:** 0 ms (beats 100.00%)  
+**Memory:** 42.4 MB (beats 50.21%)  
+**Submitted:** 2026-10-08T17:54:22.628Z  
 
 ```java
 class Solution {
@@ -58,9 +58,10 @@ class Solution {
         {
             return true;
         }
-        int sum = 0;
+        
         //int num = 1;
         do{
+            int sum = 0;
             while(n > 0)
             {
                 int digit = n % 10;
@@ -68,7 +69,7 @@ class Solution {
                 sum = sum + square;
                 n = n / 10;
             }
-            if(sum == 1)
+            if(sum == 1 || sum == 7)
             {
                 return true;
             }
@@ -77,7 +78,7 @@ class Solution {
                 n = sum;
             }
         }
-        while(n > 0);
+        while(n > 9);
         return false;
     }
 }
