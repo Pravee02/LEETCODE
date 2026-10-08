@@ -39,9 +39,9 @@ Explanation: The square root of 8 is 2.82842..., and since we round it down to t
 ## Solution
 
 **Language:** Java  
-**Runtime:** 61 ms (beats 5.16%)  
-**Memory:** 42.5 MB (beats 78.25%)  
-**Submitted:** 2026-10-08T17:00:17.127Z  
+**Runtime:** 65 ms (beats 5.16%)  
+**Memory:** 42.8 MB (beats 8.97%)  
+**Submitted:** 2026-10-08T17:01:44.645Z  
 
 ```java
 class Solution {
