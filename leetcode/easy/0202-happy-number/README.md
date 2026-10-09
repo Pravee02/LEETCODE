@@ -46,9 +46,9 @@ Output: false
 ## Solution
 
 **Language:** Java  
-**Runtime:** 0 ms (beats 100.00%)  
-**Memory:** 42.4 MB (beats 65.57%)  
-**Submitted:** 2026-10-08T17:59:52.369Z  
+**Runtime:** 1 ms (beats 78.08%)  
+**Memory:** 42.2 MB (beats 78.13%)  
+**Submitted:** 2026-10-08T17:58:43.699Z  
 
 ```java
 class Solution {
@@ -78,7 +78,7 @@ class Solution {
                 n = sum;
             }
         }
-        while(n > 5);
+        while(n > 7);
         return false;
     }
 }
