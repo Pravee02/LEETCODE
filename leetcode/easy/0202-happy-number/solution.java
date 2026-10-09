@@ -25,7 +25,7 @@ class Solution {
                 n = sum;
             }
         }
-        while(n > 8);
+        while(n > 6);
         return false;
     }
 }
