@@ -22,6 +22,7 @@ class Solution {
                
                 if(heights[i] > heights[j])
                 {
+                     
                     if(heights[j] < value )
                     {
                         value = heights[j];
@@ -37,9 +38,18 @@ class Solution {
                     heights[index] = temp;
                     count++;
                 }
+               
             }
 
         }
-        return count;
+        
+
+        if(count != 0)
+        {
+            return count+1;
+        }
+       
+        
+        return count  ;
     }
 }
