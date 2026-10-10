@@ -59,8 +59,8 @@ All indices match.
 
 **Language:** Java  
 **Runtime:** 0 ms  
-**Memory:** 42.4 MB  
-**Submitted:** 2026-10-10T08:18:59.177Z  
+**Memory:** 42.8 MB  
+**Submitted:** 2026-10-10T08:56:29.832Z  
 
 ```java
 class Solution {
@@ -87,6 +87,7 @@ class Solution {
                
                 if(heights[i] > heights[j])
                 {
+                     
                     if(heights[j] < value )
                     {
                         value = heights[j];
@@ -102,10 +103,19 @@ class Solution {
                     heights[index] = temp;
                     count++;
                 }
+               
             }
 
         }
-        return count;
+        
+
+        if(count != 0)
+        {
+            return count+1;
+        }
+       
+        
+        return count  ;
     }
 }
 ```
