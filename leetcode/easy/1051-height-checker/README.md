@@ -58,23 +58,80 @@ All indices match.
 ## Solution
 
 **Language:** Java  
-**Runtime:** 0 ms  
-**Memory:** 42.8 MB  
-**Submitted:** 2026-10-10T08:56:29.832Z  
+**Runtime:** 3 ms (beats 86.36%)  
+**Memory:** 43.2 MB (beats 73.41%)  
+**Submitted:** 2026-10-10T09:05:58.249Z  
 
 ```java
 class Solution {
     public int heightChecker(int[] heights)
-    {
-        int count = 0;
+//     {
+//         int count = 0;
         
-        for(int i = 0; i < heights.length-1;i++)
+//         for(int i = 0; i < heights.length-1;i++)
+//         {
+//             int pointer = 0;
+//             //int value = 0;
+//             int index = 0;
+//             int value = Integer.MIN_VALUE;
+//             for(int x = 0; x < heights.length-1;x++)
+//             {
+//                 if(heights[x] > value)
+//                 {
+//                     value = heights[x];
+//                     index = x;
+//                 }
+//             }
+//             for(int j = i+1 ; j < heights.length ; j++)
+//             {
+               
+//                 if(heights[i] > heights[j])
+//                 {
+                     
+//                     if(heights[j] < value )
+//                     {
+//                         value = heights[j];
+//                         index = j;
+//                         pointer++;
+
+//                     }
+//                 }
+//                 if(j == heights.length-1 && pointer > 0)
+//                 {
+//                     int temp = heights[i];
+//                     heights[i] = heights[index];
+//                     heights[index] = temp;
+//                     count++;
+//                 }
+               
+//             }
+
+//         }
+        
+
+//         if(count != 0)
+//         {
+//             return count+1;
+//         }
+       
+        
+//         return count  ;
+//     }
+// }
+
+
+{
+int count = 0;
+        
+        int[] original = heights.clone();
+        
+        for(int i = 0; i < heights.length-1; i++)
         {
             int pointer = 0;
-            //int value = 0;
             int index = 0;
             int value = Integer.MIN_VALUE;
-            for(int x = 0; x < heights.length-1;x++)
+            
+            for(int x = 0; x < heights.length; x++)
             {
                 if(heights[x] > value)
                 {
@@ -82,40 +139,37 @@ class Solution {
                     index = x;
                 }
             }
-            for(int j = i+1 ; j < heights.length ; j++)
+            
+            for(int j = i+1; j < heights.length; j++)
             {
-               
                 if(heights[i] > heights[j])
                 {
-                     
-                    if(heights[j] < value )
+                    if(heights[j] < value)
                     {
                         value = heights[j];
                         index = j;
                         pointer++;
-
                     }
                 }
+                
                 if(j == heights.length-1 && pointer > 0)
                 {
                     int temp = heights[i];
                     heights[i] = heights[index];
                     heights[index] = temp;
-                    count++;
                 }
-               
             }
-
         }
-        
 
-        if(count != 0)
+        for(int i = 0; i < heights.length; i++)
         {
-            return count+1;
+            if(original[i] != heights[i])
+            {
+                count++;
+            }
         }
-       
-        
-        return count  ;
+
+        return count;
     }
 }
 ```
