@@ -36,8 +36,8 @@ Output: 2
 
 **Language:** Java  
 **Runtime:** 0 ms  
-**Memory:** 42.6 MB  
-**Submitted:** 2026-10-12T17:15:21.876Z  
+**Memory:** 42.3 MB  
+**Submitted:** 2026-10-12T17:46:24.069Z  
 
 ```java
 class Solution {
@@ -57,7 +57,7 @@ class Solution {
                     count = counter;
                 }
             }
-            else if(count < counter)
+            else if(count <= counter)
             {
                 count = counter;
                 counter = 0;
