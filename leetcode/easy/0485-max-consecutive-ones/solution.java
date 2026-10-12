@@ -15,7 +15,7 @@ class Solution {
                     count = counter;
                 }
             }
-            else if(count < counter)
+            else if(count <= counter)
             {
                 count = counter;
                 counter = 0;
