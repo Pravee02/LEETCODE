@@ -44,8 +44,8 @@ Only 1771 contains an even number of digits.
 
 **Language:** Java  
 **Runtime:** 2 ms (beats 30.76%)  
-**Memory:** 44.4 MB (beats 77.03%)  
-**Submitted:** 2026-10-12T06:44:07.122Z  
+**Memory:** 44.7 MB (beats 46.69%)  
+**Submitted:** 2026-10-12T13:14:27.966Z  
 
 ```java
 class Solution {
