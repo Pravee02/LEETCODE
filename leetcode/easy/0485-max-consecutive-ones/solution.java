@@ -15,9 +15,13 @@ class Solution {
                     count = counter;
                 }
             }
-            else if(count <= counter)
+            else if(nums[i] != 1 && count <= counter)
             {
                 count = counter;
+                counter = 0;
+            }
+            else if(nums[i] != 1)
+            {
                 counter = 0;
             }
 
