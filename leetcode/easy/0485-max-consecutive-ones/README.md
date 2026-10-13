@@ -36,8 +36,8 @@ Output: 2
 
 **Language:** Java  
 **Runtime:** 3 ms (beats 58.11%)  
-**Memory:** 52.3 MB (beats 83.12%)  
-**Submitted:** 2026-10-13T04:49:44.294Z  
+**Memory:** 52.7 MB (beats 26.93%)  
+**Submitted:** 2026-10-13T04:51:41.446Z  
 
 ```java
 class Solution {
@@ -48,40 +48,36 @@ class Solution {
         for(int i = 0; i < nums.length; i++)
         {
             
-            // if(nums[i] == 1)
-            // {
-            //     counter++;
-            //     if(i == nums.length-1 && count < counter)
-            //     {
-                   
-            //         count = counter;
-            //     }
-            // }
-            // else if(nums[i] != 1 && count <= counter)
-            // {
-            //     count = counter;
-            //     counter = 0;
-            // }
-            // else if(nums[i] != 1)
-            // {
-            //     counter = 0;
-            // }
-
-
             if(nums[i] == 1)
             {
                 counter++;
+                
             }
-
-            if(count <= counter)
+            if( count <= counter)
             {
                 count = counter;
+                
             }
-
             if(nums[i] != 1)
             {
                 counter = 0;
             }
+
+
+            // if(nums[i] == 1)
+            // {
+            //     counter++;
+            // }
+
+            // if(count <= counter)
+            // {
+            //     count = counter;
+            // }
+
+            // if(nums[i] != 1)
+            // {
+            //     counter = 0;
+            // }
 
             
             
