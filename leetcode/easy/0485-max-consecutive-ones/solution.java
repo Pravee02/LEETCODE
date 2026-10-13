@@ -6,40 +6,36 @@ class Solution {
         for(int i = 0; i < nums.length; i++)
         {
             
-            // if(nums[i] == 1)
-            // {
-            //     counter++;
-            //     if(i == nums.length-1 && count < counter)
-            //     {
-                   
-            //         count = counter;
-            //     }
-            // }
-            // else if(nums[i] != 1 && count <= counter)
-            // {
-            //     count = counter;
-            //     counter = 0;
-            // }
-            // else if(nums[i] != 1)
-            // {
-            //     counter = 0;
-            // }
-
-
             if(nums[i] == 1)
             {
                 counter++;
+                
             }
-
-            if(count <= counter)
+            if( count <= counter)
             {
                 count = counter;
+                
             }
-
             if(nums[i] != 1)
             {
                 counter = 0;
             }
+
+
+            // if(nums[i] == 1)
+            // {
+            //     counter++;
+            // }
+
+            // if(count <= counter)
+            // {
+            //     count = counter;
+            // }
+
+            // if(nums[i] != 1)
+            // {
+            //     counter = 0;
+            // }
 
             
             
