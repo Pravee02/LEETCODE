@@ -25,19 +25,24 @@ class Solution {
             //     counter = 0;
             // }
 
-            if(nums[i] != 1)
-            {
-                counter = 0;
-            }
 
             if(nums[i] == 1)
             {
                 counter++;
             }
+
             if(count <= counter)
             {
                 count = counter;
             }
+
+            if(nums[i] != 1)
+            {
+                counter = 0;
+            }
+
+            
+            
 
 
 
