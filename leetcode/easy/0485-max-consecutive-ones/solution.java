@@ -30,19 +30,17 @@ class Solution {
             {
                 counter++;
             }
-
-            if(count <= counter)
-            {
-                count = counter;
-            }
-
+            
             if(nums[i] != 1)
             {
                 counter = 0;
             }
 
             
-            
+            if(count <= counter)
+            {
+                count = counter;
+            }
 
 
 
