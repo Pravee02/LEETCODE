@@ -35,9 +35,9 @@ Output: 2
 ## Solution
 
 **Language:** Java  
-**Runtime:** 2 ms (beats 98.15%)  
-**Memory:** 52.6 MB (beats 45.97%)  
-**Submitted:** 2026-10-12T18:03:41.938Z  
+**Runtime:** 3 ms (beats 58.11%)  
+**Memory:** 52.6 MB (beats 26.93%)  
+**Submitted:** 2026-10-13T04:48:25.014Z  
 
 ```java
 class Solution {
@@ -48,24 +48,40 @@ class Solution {
         for(int i = 0; i < nums.length; i++)
         {
             
+            // if(nums[i] == 1)
+            // {
+            //     counter++;
+            //     if(i == nums.length-1 && count < counter)
+            //     {
+                   
+            //         count = counter;
+            //     }
+            // }
+            // else if(nums[i] != 1 && count <= counter)
+            // {
+            //     count = counter;
+            //     counter = 0;
+            // }
+            // else if(nums[i] != 1)
+            // {
+            //     counter = 0;
+            // }
+
+            if(nums[i] != 1)
+            {
+                counter = 0;
+            }
+
             if(nums[i] == 1)
             {
                 counter++;
-                if(i == nums.length-1 && count < counter)
-                {
-                   
-                    count = counter;
-                }
             }
-            else if(nums[i] != 1 && count <= counter)
+            if(count <= counter)
             {
                 count = counter;
-                counter = 0;
             }
-            else if(nums[i] != 1)
-            {
-                counter = 0;
-            }
+
+
 
             
         }
