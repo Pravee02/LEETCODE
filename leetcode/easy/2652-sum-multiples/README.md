@@ -46,9 +46,9 @@ Explanation: Numbers in the range [1, 9] that are divisible by 3, 5, or 7 are 3,
 ## Solution
 
 **Language:** Java  
-**Runtime:** 3 ms (beats 93.15%)  
-**Memory:** 42.8 MB (beats 8.59%)  
-**Submitted:** 2026-10-08T16:37:35.241Z  
+**Runtime:** 4 ms (beats 2.59%)  
+**Memory:** 42.3 MB (beats 94.31%)  
+**Submitted:** 2026-10-14T13:53:46.136Z  
 
 ```java
 class Solution {
