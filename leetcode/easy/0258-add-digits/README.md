@@ -41,33 +41,43 @@ Output: 0
 ## Solution
 
 **Language:** Java  
-**Runtime:** 2 ms (beats 0.87%)  
+**Runtime:** 1 ms (beats 98.23%)  
 **Memory:** 42.2 MB (beats 94.71%)  
-**Submitted:** 2026-10-14T16:55:36.626Z  
+**Submitted:** 2026-10-14T17:16:11.752Z  
 
 ```java
 class Solution {
     public int addDigits(int num) {
-        int sum = 0;  // 11
-        while(num > 0)
-        {
-            int digit = num % 10;
-            sum = sum + digit;
-            num = num / 10;
-        }
-        if(sum >= 0 && sum <= 9)
-        {
-            return sum;
-        }
-        else
-        {
-            return addDigits(sum);
-        }
+        // int sum = 0;  // 11
+        // while(num > 0)
+        // {
+        //     int digit = num % 10;
+        //     sum = sum + digit;
+        //     num = num / 10;
+        // }
+        // if(sum >= 0 && sum <= 9)
+        // {
+        //     return sum;
+        // }
+        // else
+        // {
+        //     return addDigits(sum);
+        // }
         
+
+        
+   
+        if (num == 0)
+            return 0;
+        if (num % 9 == 0)
+            return 9;
+        return num % 9;
     }
+}
+    
 
     
-}
+
 ```
 
 ---
