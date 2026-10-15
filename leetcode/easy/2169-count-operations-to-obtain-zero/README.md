@@ -50,8 +50,8 @@ So the total number of operations required is 1.
 
 **Language:** Java  
 **Runtime:** 1 ms (beats 88.95%)  
-**Memory:** 41.9 MB (beats 95.81%)  
-**Submitted:** 2026-10-15T02:54:57.168Z  
+**Memory:** 41.7 MB (beats 98.02%)  
+**Submitted:** 2026-10-15T02:55:05.864Z  
 
 ```java
 class Solution {
