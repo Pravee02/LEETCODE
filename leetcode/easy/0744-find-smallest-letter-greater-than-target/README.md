@@ -51,8 +51,8 @@ Explanation: There are no characters in letters that is lexicographically greate
 
 **Language:** Java  
 **Runtime:** 0 ms (beats 100.00%)  
-**Memory:** 46.3 MB (beats 50.99%)  
-**Submitted:** 2026-10-04T16:48:41.290Z  
+**Memory:** 46 MB (beats 93.98%)  
+**Submitted:** 2026-10-19T15:54:11.070Z  
 
 ```java
 class Solution {
