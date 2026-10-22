@@ -48,50 +48,77 @@ The array has one each of 0, 1, and 2, arranged in-place in the order 0, 1, 2.
 
 **Language:** Java  
 **Runtime:** 0 ms (beats 100.00%)  
-**Memory:** 43 MB (beats 96.04%)  
-**Submitted:** 2026-10-22T13:20:03.481Z  
+**Memory:** 43.3 MB (beats 70.94%)  
+**Submitted:** 2026-10-22T14:36:54.002Z  
 
 ```java
 class Solution {
     public void sortColors(int[] nums) {
-        int  redcount = 0;
-        int whitecount = 0;
-        int bluecount = 0;
+        // int  redcount = 0;
+        // int whitecount = 0;
+        // int bluecount = 0;
 
-        for(int i = 0; i < nums.length; i++)
+        // for(int i = 0; i < nums.length; i++)
+        // {
+        //     if(nums[i] == 0){
+        //         redcount++;
+        //         continue;
+        //     }
+        //     if(nums[i] == 1){
+        //         whitecount++;
+        //         continue;
+        //     }
+        //     if(nums[i] == 2){
+        //         bluecount++;
+        //     }
+        // }
+
+        // for(int i = 0; i < nums.length;i++)
+        // {
+        //     if(redcount > 0)
+        //     {
+        //         nums[i] = 0;
+        //         redcount--;
+        //     }
+        //     else if(whitecount > 0)
+        //     {
+        //         nums[i] = 1;
+        //         whitecount--;
+        //     }
+        //     else if(bluecount > 0)
+        //     {
+        //         nums[i] = 2;
+        //         bluecount--;
+        //     }
+
+        // }
+
+    int start = 0;
+    int mid = 0;
+    int end = nums.length-1;
+
+    while(mid <= end)
+    {
+        if(nums[mid] == 0)
         {
-            if(nums[i] == 0){
-                redcount++;
-                continue;
-            }
-            if(nums[i] == 1){
-                whitecount++;
-                continue;
-            }
-            if(nums[i] == 2){
-                bluecount++;
-            }
+            nums[mid] = nums[start];
+            nums[start] = 0;
+            start++;
+            mid++;
+        }
+        else if(nums[mid] == 2)
+        {
+            nums[mid] = nums[end];
+            nums[end] = 2;
+            end--;
+        }
+        else if(nums[mid] == 1)
+        {
+            mid++;
         }
 
-        for(int i = 0; i < nums.length;i++)
-        {
-            if(redcount > 0)
-            {
-                nums[i] = 0;
-                redcount--;
-            }
-            else if(whitecount > 0)
-            {
-                nums[i] = 1;
-                whitecount--;
-            }
-            else if(bluecount > 0)
-            {
-                nums[i] = 2;
-                bluecount--;
-            }
+    }
 
-        }
     }
 }
 ```
