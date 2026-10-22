@@ -57,6 +57,7 @@ class Solution {
             nums[mid] = nums[end];
             nums[end] = 2;
             end--;
+            
         }
         else if(nums[mid] == 1)
         {
