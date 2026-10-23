@@ -49,9 +49,9 @@ So the total number of operations required is 1.
 ## Solution
 
 **Language:** Java  
-**Runtime:** 1 ms (beats 88.95%)  
-**Memory:** 41.7 MB (beats 98.02%)  
-**Submitted:** 2026-10-15T02:55:05.864Z  
+**Runtime:** 1 ms (beats 88.15%)  
+**Memory:** 41.8 MB (beats 89.51%)  
+**Submitted:** 2026-10-23T15:39:05.020Z  
 
 ```java
 class Solution {
