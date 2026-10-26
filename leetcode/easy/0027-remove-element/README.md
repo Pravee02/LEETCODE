@@ -67,9 +67,9 @@ It does not matter what you leave beyond the returned k (hence they are undersco
 ## Solution
 
 **Language:** Java  
-**Runtime:** 0 ms (beats 100.00%)  
-**Memory:** 42.8 MB (beats 96.65%)  
-**Submitted:** 2026-10-26T09:24:22.010Z  
+**Runtime:** 0 ms  
+**Memory:** 42 MB  
+**Submitted:** 2026-10-26T09:25:12.454Z  
 
 ```java
 class Solution {
@@ -95,6 +95,7 @@ class Solution {
             nums[i] = nums[j];
             j++;
             }
+            
         
         }
     return count;
