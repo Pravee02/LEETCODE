@@ -50,53 +50,32 @@ Output: [0,0,0,0]
 ## Solution
 
 **Language:** Java  
-**Runtime:** 1 ms  
-**Memory:** 42.4 MB  
-**Submitted:** 2026-10-26T07:30:43.466Z  
+**Runtime:** 9 ms (beats 27.35%)  
+**Memory:** 44.9 MB (beats 97.36%)  
+**Submitted:** 2026-10-26T07:33:02.197Z  
 
 ```java
 import java.util.Arrays;
 class Solution {
     public int[] smallerNumbersThanCurrent(int[] nums) {
-        // if(nums == null || nums.length == 0)
-        // {
-        //     return null;
-        // }
-        // int[] result = new int[nums.length];
-
-        // for(int i = 0; i < nums.length; i++){
-        // int count = 0;
-        // for(int j = 0; j < nums.length; j++){
-        //     if(nums[j] < nums[i] )
-        //     {
-        //         count++;
-        //     }
-        // }
-        // result[i] = count;
-        // }
-        // return result;
-        int[] newArray = nums.clone();
-        Arrays.sort(newArray);
-
-        for(int i = 1; i < newArray.length; i++)
+        if(nums == null || nums.length == 0)
         {
-             nums[i] = i;
-             
-            if(newArray[i] == newArray[0])
-            {
-                nums[i] = 0;
-            }
-
-            else if(newArray[i] == newArray[i-1])
-            {
-                nums[i] = i-1;
-            }
-
-           
+            return null;
         }
-        return nums;
+        int[] result = new int[nums.length];
 
-
+        for(int i = 0; i < nums.length; i++){
+        int count = 0;
+        for(int j = 0; j < nums.length; j++){
+            if(nums[j] < nums[i] )
+            {
+                count++;
+            }
+        }
+        result[i] = count;
+        }
+        return result;
+       
     }
 }
 ```
