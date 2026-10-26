@@ -45,8 +45,8 @@ Output: [3,4,6,16,17]
 
 **Language:** Java  
 **Runtime:** 0 ms (beats 100.00%)  
-**Memory:** 43.7 MB (beats 95.74%)  
-**Submitted:** 2026-10-26T05:37:51.351Z  
+**Memory:** 43.8 MB (beats 89.04%)  
+**Submitted:** 2026-10-26T06:43:08.237Z  
 
 ```java
 class Solution {
