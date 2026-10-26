@@ -21,6 +21,7 @@ class Solution {
             nums[i] = nums[j];
             j++;
             }
+            
         
         }
     return count;
