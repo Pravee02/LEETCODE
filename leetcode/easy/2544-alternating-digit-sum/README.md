@@ -50,8 +50,8 @@ Explanation: (+8) + (-8) + (+6) + (-9) + (+9) + (-6) = 0.
 
 **Language:** Java  
 **Runtime:** 0 ms (beats 100.00%)  
-**Memory:** 42.1 MB (beats 66.71%)  
-**Submitted:** 2026-10-08T16:13:18.674Z  
+**Memory:** 41.3 MB (beats 98.32%)  
+**Submitted:** 2026-10-26T05:40:42.838Z  
 
 ```java
 class Solution {
