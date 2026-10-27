@@ -44,9 +44,9 @@ Explanation: There are no elements to the right of index 0.
 ## Solution
 
 **Language:** Java  
-**Runtime:** 988 ms (beats 13.31%)  
+**Runtime:** 2 ms (beats 99.55%)  
 **Memory:** 48.8 MB (beats 85.02%)  
-**Submitted:** 2026-10-27T04:37:07.840Z  
+**Submitted:** 2026-10-27T04:54:41.373Z  
 
 ```java
 class Solution {
@@ -54,25 +54,37 @@ class Solution {
         
         int[] newArray =  arr.clone();
 
-        int j = 0;
-        while(j < arr.length-1)
+        // int j = 0;
+        // while(j < arr.length-1)
+        // {
+        //     int greater = arr[j+1];
+        //     for(int i = j+1; i < arr.length; i++)
+        //     {
+        //        if(arr[i] > greater)
+        //        {
+        //         greater = arr[i];
+        //        }
+        //     }
+        //     newArray[j] = greater;
+        //     j++;
+        // }
+        // if(j == arr.length-1)
+        // {
+        //     newArray[j] = -1;
+        // }
+        // return newArray;
+
+        int largest = -1;
+
+        for(int i = arr.length-1; i >= 0; i--)
         {
-            int greater = arr[j+1];
-            for(int i = j+1; i < arr.length; i++)
+            arr[i] = largest;
+            if(newArray[i] > largest)
             {
-               if(arr[i] > greater)
-               {
-                greater = arr[i];
-               }
+                largest = newArray[i];
             }
-            newArray[j] = greater;
-            j++;
         }
-        if(j == arr.length-1)
-        {
-            newArray[j] = -1;
-        }
-        return newArray;
+        return arr;
     }
 }
 ```
