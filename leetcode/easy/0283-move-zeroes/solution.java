@@ -1,8 +1,8 @@
 class Solution {
      public void moveZeroes(int[] nums) {
-         int left = 0;
+        int left = 0;
         int right = left + 1;
-        int length1 = (nums.length) - 1;
+        int length1 = nums.length - 1;
 
         if (nums.length == 0 || nums.length == 1) {
             System.out.println(nums[0]);
@@ -33,11 +33,11 @@ class Solution {
 
         }
 
-        for (int i = 0; i < nums.length; i++) {
-            System.out.print(nums[i] + " ");
+        // for (int i = 0; i < nums.length; i++) {
+        //     System.out.print(nums[i] + " ");
         } 
     }
-}
+
 
 
     // int left = 0;
