@@ -55,8 +55,8 @@ Explanation: There is no cycle in the linked list.
 
 **Language:** Java  
 **Runtime:** 1 ms (beats 12.48%)  
-**Memory:** 46.2 MB (beats 91.15%)  
-**Submitted:** 2026-10-29T13:03:35.041Z  
+**Memory:** 46 MB (beats 98.52%)  
+**Submitted:** 2026-10-29T13:06:03.986Z  
 
 ```java
 /**
