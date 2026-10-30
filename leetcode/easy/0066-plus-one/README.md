@@ -55,8 +55,8 @@ Thus, the result should be [1,0].
 
 **Language:** Java  
 **Runtime:** 0 ms (beats 100.00%)  
-**Memory:** 43 MB (beats 83.38%)  
-**Submitted:** 2026-10-30T07:33:30.024Z  
+**Memory:** 43 MB (beats 88.12%)  
+**Submitted:** 2026-10-30T07:50:21.018Z  
 
 ```java
 class Solution {
