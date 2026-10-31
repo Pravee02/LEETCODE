@@ -57,28 +57,36 @@ The sum of `nums[0]` and `nums[1]` is `3 + 3 = 6`, which equals the target. Ther
 
 ## Solution
 
-**Language:** Java  
-**Runtime:** 45 ms (beats 27.03%)  
-**Memory:** 46.4 MB (beats 92.84%)  
-**Submitted:** 2026-10-31T05:20:25.784Z  
+**Language:** PHP  
+**Runtime:** 1 ms (beats 51.34%)  
+**Memory:** 20.5 MB (beats 77.78%)  
+**Submitted:** 2026-10-31T14:57:36.859Z  
 
-```java
+```php
 class Solution {
-    public int[] twoSum(int[] nums, int target) {
-        for(int i =0;i<nums.length;i++)
-        {
-            for(int j = i+1;j<nums.length;j++)
-            {
-                if(nums[i]+nums[j]==target)
-                {
-                    return new int[]{i,j};
-                }
+
+    /**
+     * @param Integer[] $nums
+     * @param Integer $target
+     * @return Integer[]
+     */
+    function twoSum($nums, $target) {
+         $map = [];
+
+        for ($i = 0; $i < count($nums); $i++) {
+
+            $complement = $target - $nums[$i];
+
+            if (isset($map[$complement])) {
+                return [$map[$complement], $i];
             }
+
+            $map[$nums[$i]] = $i;
         }
-        return new int[]{0};
+
+        return [];
     }
 }
-        
 ```
 
 ---
