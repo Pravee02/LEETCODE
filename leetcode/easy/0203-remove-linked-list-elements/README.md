@@ -43,9 +43,9 @@ Output: []
 ## Solution
 
 **Language:** Java  
-**Runtime:** 0 ms  
-**Memory:** 41.9 MB  
-**Submitted:** 2026-10-31T05:49:31.299Z  
+**Runtime:** 1 ms (beats 96.95%)  
+**Memory:** 46.8 MB (beats 91.83%)  
+**Submitted:** 2026-10-31T13:40:20.374Z  
 
 ```java
 /**
@@ -64,23 +64,29 @@ class Solution {
         {
             return null;
         }
-        if(head.val == val)
+        while(head!=null && head.val == val )
         {
-            head = head.next;
+          head = head.next;
         }
+
         ListNode temp = head;
-        while(temp!=null && temp.next != null)
+        ListNode currentTemp = head;
+
+        while(currentTemp!=null )
         {
-            if(temp.val == val)
+            if(currentTemp.next != null && currentTemp.next.val == val)
             {
-                head = head.next;
+                currentTemp = currentTemp.next;
+                continue;
             }
-            else if(temp.next.val == val)
+            else 
             {
-                temp.next = temp.next.next;
-               
+                temp.next = currentTemp.next;
+                temp = temp.next;
             }
-            temp = temp.next;
+            
+
+            currentTemp = currentTemp.next;
            
         }
         return head;
