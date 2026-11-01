@@ -44,7 +44,7 @@ Hence, the sum of the squares of all special elements of nums is nums[1]  *nums[
 **Language:** Java  
 **Runtime:** 2 ms (beats 7.37%)  
 **Memory:** 45.6 MB (beats 98.94%)  
-**Submitted:** 2026-11-01T04:24:01.333Z  
+**Submitted:** 2026-11-01T04:24:19.304Z  
 
 ```java
 class Solution {
@@ -54,18 +54,14 @@ class Solution {
         int j = 0;
         for(int i = 1; i <= nums.length; i++)
         {
-            try
-            {
+            
             if( n % i == 0)
             {
                 sum = sum + (nums[j] * nums[j]);
                 
             }
-            }
-            catch(ArithmeticException e)
-            {
-                System.out.println(e);
-            }
+            
+            
             j++;
 
         }
