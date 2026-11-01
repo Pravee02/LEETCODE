@@ -5,18 +5,14 @@ class Solution {
         int j = 0;
         for(int i = 1; i <= nums.length; i++)
         {
-            try
-            {
+            
             if( n % i == 0)
             {
                 sum = sum + (nums[j] * nums[j]);
                 
             }
-            }
-            catch(ArithmeticException e)
-            {
-                System.out.println(e);
-            }
+            
+            
             j++;
 
         }
