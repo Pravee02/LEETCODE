@@ -56,8 +56,8 @@ Explanation: You are given the third node with value 1, the linked list should b
 
 **Language:** Java  
 **Runtime:** 0 ms (beats 100.00%)  
-**Memory:** 44.8 MB (beats 82.76%)  
-**Submitted:** 2026-10-31T14:52:51.897Z  
+**Memory:** 44.6 MB (beats 91.76%)  
+**Submitted:** 2026-11-01T14:58:34.072Z  
 
 ```java
 /**
@@ -70,9 +70,19 @@ Explanation: You are given the third node with value 1, the linked list should b
  */
 class Solution {
     public void deleteNode(ListNode node) {
-        node.val = node.next.val;
 
-        node.next = node.next.next;
+        while(node.next.next != null)
+        {
+            node.val = node.next.val;
+            node = node.next;
+            
+        }
+        node.val = node.next.val;
+        node.next = null;
+
+        // node.val = node.next.val;
+
+        // node.next = node.next.next;
     }
 }
 ```
