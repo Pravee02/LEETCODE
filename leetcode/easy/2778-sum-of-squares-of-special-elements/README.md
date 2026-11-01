@@ -43,15 +43,15 @@ Hence, the sum of the squares of all special elements of nums is nums[1]  *nums[
 
 **Language:** Java  
 **Runtime:** 2 ms (beats 7.37%)  
-**Memory:** 46.1 MB (beats 92.95%)  
-**Submitted:** 2026-11-01T04:29:28.443Z  
+**Memory:** 45.8 MB (beats 96.54%)  
+**Submitted:** 2026-11-01T04:28:24.554Z  
 
 ```java
 class Solution {
     public int sumOfSquares(int[] nums) {
         int sum = 0;
         int n = nums.length;
-        for(int i = 1; i <= n; i++){
+        for(int i = 1; i <= nums.length; i++){
             if( n % i == 0){
                // sum = sum + (nums[i-1] * nums[i-1]);
                sum+=Math.pow(nums[i-1],2);
