@@ -2,18 +2,17 @@ class Solution {
     public int sumOfSquares(int[] nums) {
         int sum = 0;
         int n = nums.length;
-        int j = 0;
         for(int i = 1; i <= nums.length; i++)
         {
             
             if( n % i == 0)
             {
-                sum = sum + (nums[j] * nums[j]);
+                sum = sum + (nums[i-1] * nums[i-1]);
                 
             }
             
             
-            j++;
+            
 
         }
         return sum;
