@@ -1,7 +1,19 @@
 class Solution {
     public int minMoves(int[] nums) {
-         int lo = Arrays.stream(nums).min().getAsInt(), moves = 0;
-        for (int x : nums) moves += x - lo;
+              int min = nums[0];
+
+        for (int i = 1; i < nums.length; i++) {
+            if (nums[i] < min) {
+                min = nums[i];
+            }
+        }
+
+        int moves = 0;
+
+        for (int i = 0; i < nums.length; i++) {
+            moves += nums[i] - min;
+        }
+
         return moves;
     }
 }
