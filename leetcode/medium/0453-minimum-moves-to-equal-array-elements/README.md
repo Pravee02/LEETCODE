@@ -40,15 +40,27 @@ Output: 0
 ## Solution
 
 **Language:** Java  
-**Runtime:** 7 ms (beats 10.95%)  
-**Memory:** 47.6 MB (beats 9.35%)  
-**Submitted:** 2026-11-01T03:41:05.091Z  
+**Runtime:** 2 ms (beats 94.49%)  
+**Memory:** 47.1 MB (beats 51.41%)  
+**Submitted:** 2026-11-01T03:51:09.184Z  
 
 ```java
 class Solution {
     public int minMoves(int[] nums) {
-         int lo = Arrays.stream(nums).min().getAsInt(), moves = 0;
-        for (int x : nums) moves += x - lo;
+              int min = nums[0];
+
+        for (int i = 1; i < nums.length; i++) {
+            if (nums[i] < min) {
+                min = nums[i];
+            }
+        }
+
+        int moves = 0;
+
+        for (int i = 0; i < nums.length; i++) {
+            moves += nums[i] - min;
+        }
+
         return moves;
     }
 }
