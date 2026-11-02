@@ -46,35 +46,25 @@ Output: false
 ## Solution
 
 **Language:** Java  
-**Runtime:** 0 ms  
-**Memory:** 41.2 MB  
-**Submitted:** 2026-11-02T15:45:19.154Z  
+**Runtime:** 3 ms (beats 27.23%)  
+**Memory:** 84.6 MB (beats 90.16%)  
+**Submitted:** 2026-11-02T15:53:18.115Z  
 
 ```java
 class Solution {
     public boolean isMonotonic(int[] nums) {
-        boolean result = true;
-        if(nums[0] <= nums[1]){
+        boolean increasing = true;
+        boolean decreasing = true;
         for(int i = 0; i < nums.length-1;i++)
         {
-            if(! (nums[i] <= nums[i+1]))
-            {
-                result =  false;
-            }
-        }
-        }
-        if(nums[0] >= nums[1]){
-        for(int i = 0; i < nums.length-1;i++)
-        {
-            if(! (nums[i] >= nums[i+1]))
-            {
-                result =  false;
-            }
-            
-        }
-        }
-    
-        return result;
+            if (nums[i] > nums[i + 1]) {
+            increasing = false;
+}
+            if (nums[i] < nums[i + 1]) {
+            decreasing = false;
+}
+        } 
+        return increasing || decreasing;
     }
 }
 ```
