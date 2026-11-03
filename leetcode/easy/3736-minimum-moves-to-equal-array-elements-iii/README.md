@@ -53,9 +53,9 @@ Now, all elements of `nums` are equal to 5. The minimum total moves is `2`.
 ## Solution
 
 **Language:** Java  
-**Runtime:** 7 ms (beats 10.17%)  
-**Memory:** 46.3 MB (beats 53.81%)  
-**Submitted:** 2026-11-03T04:44:59.452Z  
+**Runtime:** 6 ms (beats 10.17%)  
+**Memory:** 46.2 MB (beats 69.21%)  
+**Submitted:** 2026-11-03T04:49:19.490Z  
 
 ```java
 import java.util.Arrays;
