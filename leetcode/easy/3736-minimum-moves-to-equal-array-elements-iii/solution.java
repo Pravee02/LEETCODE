@@ -6,8 +6,11 @@ class Solution {
         int moves = 0;
         for(int i = 0 ; i < nums.length-1; i++)
         {
+            if(nums[i] < maxVal)
+            {
             int dif = maxVal - nums[i];
             moves = moves + dif;
+            }
         } 
         return moves;
     }
