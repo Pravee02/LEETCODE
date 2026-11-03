@@ -4,13 +4,12 @@ class Solution {
         Arrays.sort(nums);
         int maxVal = nums[nums.length-1];
         int moves = 0;
-        for(int i = 0 ; i < nums.length-1; i++)
+        int i = 0;
+        while(nums[i] < maxVal)
         {
-            if(nums[i] < maxVal)
-            {
-            int dif = maxVal - nums[i];
-            moves = moves + dif;
-            }
+            
+            moves = moves +  maxVal - nums[i];;
+            i++;
         } 
         return moves;
     }
