@@ -53,9 +53,9 @@ Now, all elements of `nums` are equal to 5. The minimum total moves is `2`.
 ## Solution
 
 **Language:** Java  
-**Runtime:** 6 ms (beats 10.17%)  
-**Memory:** 46.4 MB (beats 38.56%)  
-**Submitted:** 2026-11-03T04:50:37.272Z  
+**Runtime:** 8 ms (beats 10.17%)  
+**Memory:** 46.6 MB (beats 8.33%)  
+**Submitted:** 2026-11-03T04:52:54.060Z  
 
 ```java
 import java.util.Arrays;
@@ -64,13 +64,12 @@ class Solution {
         Arrays.sort(nums);
         int maxVal = nums[nums.length-1];
         int moves = 0;
-        for(int i = 0 ; i < nums.length-1; i++)
+        int i = 0;
+        while(nums[i] < maxVal)
         {
-            if(nums[i] < maxVal)
-            {
-            int dif = maxVal - nums[i];
-            moves = moves + dif;
-            }
+            
+            moves = moves +  maxVal - nums[i];;
+            i++;
         } 
         return moves;
     }
