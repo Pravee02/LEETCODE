@@ -39,9 +39,9 @@ Output: [[1,4],[2,5],[3,6]]
 ## Solution
 
 **Language:** Java  
-**Runtime:** 1 ms (beats 30.59%)  
-**Memory:** 45.8 MB (beats 98.94%)  
-**Submitted:** 2026-11-04T03:19:26.637Z  
+**Runtime:** 1 ms (beats 30.90%)  
+**Memory:** 46 MB (beats 95.89%)  
+**Submitted:** 2026-11-05T02:26:36.015Z  
 
 ```java
 class Solution {
