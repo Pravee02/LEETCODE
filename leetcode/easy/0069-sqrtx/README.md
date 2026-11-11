@@ -12,6 +12,8 @@ You  **must not use**  any built-in exponent function or operator.
 
  
 
+Original
+Java
  **Example 1:** 
 
 ```
@@ -39,9 +41,9 @@ Explanation: The square root of 8 is 2.82842..., and since we round it down to t
 ## Solution
 
 **Language:** Java  
-**Runtime:** 65 ms (beats 5.16%)  
-**Memory:** 42.8 MB (beats 8.97%)  
-**Submitted:** 2026-10-08T17:01:44.645Z  
+**Runtime:** 63 ms (beats 5.23%)  
+**Memory:** 42.2 MB (beats 79.02%)  
+**Submitted:** 2026-11-11T06:11:41.296Z  
 
 ```java
 class Solution {
