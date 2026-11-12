@@ -13,6 +13,8 @@ Return  *the number of matches played in the tournament until a winner is decide
 
  
 
+Original
+Java
  **Example 1:** 
 
 ```
@@ -50,8 +52,8 @@ Total number of matches = 7 + 3 + 2 + 1 = 13.
 
 **Language:** Java  
 **Runtime:** 0 ms (beats 100.00%)  
-**Memory:** 41.7 MB (beats 86.77%)  
-**Submitted:** 2026-11-01T16:14:30.679Z  
+**Memory:** 41.4 MB (beats 97.63%)  
+**Submitted:** 2026-11-12T14:38:56.572Z  
 
 ```java
 class Solution {
