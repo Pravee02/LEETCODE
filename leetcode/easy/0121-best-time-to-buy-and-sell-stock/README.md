@@ -12,6 +12,8 @@ Return  *the maximum profit you can achieve from this transaction*. If you canno
 
  
 
+Original
+Java
  **Example 1:** 
 
 ```
@@ -41,9 +43,9 @@ Explanation: In this case, no transactions are done and the max profit = 0.
 ## Solution
 
 **Language:** Java  
-**Runtime:** 2 ms (beats 47.85%)  
-**Memory:** 94 MB (beats 90.66%)  
-**Submitted:** 2026-10-21T13:25:40.609Z  
+**Runtime:** 2 ms (beats 50.01%)  
+**Memory:** 93.9 MB (beats 79.10%)  
+**Submitted:** 2026-11-14T11:15:42.071Z  
 
 ```java
 class Solution {
