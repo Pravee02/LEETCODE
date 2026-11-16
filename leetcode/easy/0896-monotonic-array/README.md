@@ -12,6 +12,8 @@ Given an integer array `nums`, return `true` *if the given array is monotonic, o
 
  
 
+Original
+Java
  **Example 1:** 
 
 ```
@@ -46,9 +48,9 @@ Output: false
 ## Solution
 
 **Language:** Java  
-**Runtime:** 3 ms (beats 27.23%)  
-**Memory:** 84.6 MB (beats 90.16%)  
-**Submitted:** 2026-11-02T15:53:18.115Z  
+**Runtime:** 3 ms (beats 34.26%)  
+**Memory:** 84.9 MB (beats 69.97%)  
+**Submitted:** 2026-11-16T03:06:41.860Z  
 
 ```java
 class Solution {
