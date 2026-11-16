@@ -49,8 +49,8 @@ In this example, the second and third sentences (underlined) have the same numbe
 
 **Language:** Java  
 **Runtime:** 4 ms (beats 56.76%)  
-**Memory:** 44 MB (beats 79.59%)  
-**Submitted:** 2026-11-16T07:43:56.852Z  
+**Memory:** 43.6 MB (beats 95.30%)  
+**Submitted:** 2026-11-16T08:11:50.910Z  
 
 ```java
 class Solution {
