@@ -10,6 +10,8 @@ A  **word**  is a maximal substring consisting of non-space characters only.
 
  
 
+Original
+Java
  **Example 1:** 
 
 ```
@@ -49,8 +51,8 @@ Explanation: The last word is "joyboy" with length 6.
 
 **Language:** Java  
 **Runtime:** 0 ms (beats 100.00%)  
-**Memory:** 43.1 MB (beats 50.98%)  
-**Submitted:** 2026-10-06T13:50:23.062Z  
+**Memory:** 42.2 MB (beats 96.21%)  
+**Submitted:** 2026-11-16T06:36:05.161Z  
 
 ```java
 class Solution {
