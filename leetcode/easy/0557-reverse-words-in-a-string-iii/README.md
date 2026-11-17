@@ -40,8 +40,8 @@ Output: "rM gniD"
 
 **Language:** Java  
 **Runtime:** 4 ms (beats 87.62%)  
-**Memory:** 46 MB (beats 87.74%)  
-**Submitted:** 2026-11-17T14:47:12.150Z  
+**Memory:** 45.7 MB (beats 96.20%)  
+**Submitted:** 2026-11-17T14:59:18.610Z  
 
 ```java
 class Solution {
@@ -51,18 +51,15 @@ class Solution {
         int right = 0;
         int left = 0;
          
-        for(int i = 0; i < arr.length; i++)
-        {
-            if(arr[i] == ' ' || i == arr.length-1)
-            {
+        for(int i = 0; i < arr.length; i++){
+            if(arr[i] == ' ' || i == arr.length-1){
                 if(i != arr.length-1){
                 right = i - 1;
                 }
                 else{
                     right = i;
                 }
-                while(left <= right)
-                {
+                while(left <= right){
                     char temp = arr[left];
                     arr[left] = arr[right];
                     arr[right] = temp;
