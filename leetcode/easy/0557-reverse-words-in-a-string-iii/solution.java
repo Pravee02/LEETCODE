@@ -23,7 +23,7 @@ class Solution {
                 left = i + 1;
             }
         }
-        String result = new String(arr);
-        return result;
+         return  new String(arr);
+       
     }
 }
