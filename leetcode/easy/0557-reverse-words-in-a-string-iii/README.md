@@ -40,8 +40,8 @@ Output: "rM gniD"
 
 **Language:** Java  
 **Runtime:** 4 ms (beats 87.62%)  
-**Memory:** 45.7 MB (beats 96.20%)  
-**Submitted:** 2026-11-17T14:59:18.610Z  
+**Memory:** 45.8 MB (beats 96.20%)  
+**Submitted:** 2026-11-17T15:00:35.790Z  
 
 ```java
 class Solution {
@@ -69,8 +69,8 @@ class Solution {
                 left = i + 1;
             }
         }
-        String result = new String(arr);
-        return result;
+         return  new String(arr);
+       
     }
 }
 ```
