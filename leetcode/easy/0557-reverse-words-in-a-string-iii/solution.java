@@ -5,18 +5,15 @@ class Solution {
         int right = 0;
         int left = 0;
          
-        for(int i = 0; i < arr.length; i++)
-        {
-            if(arr[i] == ' ' || i == arr.length-1)
-            {
+        for(int i = 0; i < arr.length; i++){
+            if(arr[i] == ' ' || i == arr.length-1){
                 if(i != arr.length-1){
                 right = i - 1;
                 }
                 else{
                     right = i;
                 }
-                while(left <= right)
-                {
+                while(left <= right){
                     char temp = arr[left];
                     arr[left] = arr[right];
                     arr[right] = temp;
