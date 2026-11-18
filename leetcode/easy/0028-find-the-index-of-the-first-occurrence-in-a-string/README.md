@@ -40,8 +40,8 @@ Explanation: "leeto" did not occur in "leetcode", so we return -1.
 
 **Language:** Java  
 **Runtime:** 3 ms (beats 9.44%)  
-**Memory:** 42.6 MB (beats 77.29%)  
-**Submitted:** 2026-11-18T16:21:27.551Z  
+**Memory:** 42.7 MB (beats 60.68%)  
+**Submitted:** 2026-11-18T16:30:11.745Z  
 
 ```java
 class Solution {
@@ -58,7 +58,6 @@ class Solution {
                 if(count == 0)
                 {
                     index =i;
-                    
                 }
 
                 count++;
@@ -77,7 +76,7 @@ class Solution {
 
             count = 0;
             j = 0;
-            index = -1;
+            //index = -1;
             }
         }
         return -1;
