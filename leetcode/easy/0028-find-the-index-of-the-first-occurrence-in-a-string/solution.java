@@ -12,7 +12,6 @@ class Solution {
                 if(count == 0)
                 {
                     index =i;
-                    
                 }
 
                 count++;
@@ -31,7 +30,7 @@ class Solution {
 
             count = 0;
             j = 0;
-            index = -1;
+            //index = -1;
             }
         }
         return -1;
