@@ -39,48 +39,60 @@ Explanation: "leeto" did not occur in "leetcode", so we return -1.
 ## Solution
 
 **Language:** Java  
-**Runtime:** 3 ms (beats 9.44%)  
-**Memory:** 42.7 MB (beats 60.68%)  
-**Submitted:** 2026-11-18T16:30:11.745Z  
+**Runtime:** 6 ms (beats 5.08%)  
+**Memory:** 43.1 MB (beats 19.93%)  
+**Submitted:** 2026-11-19T05:09:03.904Z  
 
 ```java
 class Solution {
     public int strStr(String haystack, String needle) {
-        int count = 0;
-        int j = 0;
-        int index = -1;
-        for(int i = 0; i < haystack.length();i++)
-        {
+//         int count = 0;
+//         int j = 0;
+//         int index = -1;
+//         for(int i = 0; i < haystack.length();i++)
+//         {
             
-            if(haystack.charAt(i) == needle.charAt(j))
-            {
+//             if(haystack.charAt(i) == needle.charAt(j))
+//             {
               
-                if(count == 0)
-                {
-                    index =i;
-                }
+//                 if(count == 0)
+//                 {
+//                     index =i;
+//                 }
 
-                count++;
-                j++;
+//                 count++;
+//                 j++;
 
-                if(count == needle.length())
-                {
-                    return index;
-                }
-            }
-            else
-            {
-               if (count > 0) {
-                i = index;
-            }
+//                 if(count == needle.length())
+//                 {
+//                     return index;
+//                 }
+//             }
+//             else
+//             {
+//                if (count > 0) {
+//                 i = index;
+//             }
 
-            count = 0;
-            j = 0;
-            //index = -1;
-            }
+//             count = 0;
+//             j = 0;
+//             }
+//         }
+//         return -1;
+//     }
+// }
+
+ haystack = haystack.replaceFirst(needle , "*");
+       for(int i = 0; i < haystack.length();i++)
+       {
+        if(haystack.charAt(i) == '*')
+        {
+            return i;
         }
-        return -1;
-    }
+       }
+       return -1;
+
+     }
 }
 ```
 
