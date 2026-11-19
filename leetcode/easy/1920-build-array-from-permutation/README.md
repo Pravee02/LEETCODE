@@ -10,6 +10,8 @@ A  **zero-based permutation**  `nums` is an array of  **distinct**  integers fro
 
  
 
+Original
+Java
  **Example 1:** 
 
 ```
@@ -47,9 +49,9 @@ ans = [nums[nums[0]], nums[nums[1]], nums[nums[2]], nums[nums[3]], nums[nums[4]]
 ## Solution
 
 **Language:** Java  
-**Runtime:** 1 ms (beats 99.55%)  
-**Memory:** 46.7 MB (beats 97.88%)  
-**Submitted:** 2026-10-12T06:51:21.581Z  
+**Runtime:** 1 ms (beats 99.67%)  
+**Memory:** 46.5 MB (beats 84.97%)  
+**Submitted:** 2026-11-19T02:41:25.952Z  
 
 ```java
 class Solution {
