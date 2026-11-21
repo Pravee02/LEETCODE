@@ -43,9 +43,9 @@ Explanation: In this case, no transactions are done and the max profit = 0.
 ## Solution
 
 **Language:** Java  
-**Runtime:** 2 ms (beats 50.01%)  
-**Memory:** 93.9 MB (beats 86.27%)  
-**Submitted:** 2026-11-14T11:15:47.999Z  
+**Runtime:** 2 ms (beats 50.52%)  
+**Memory:** 94.3 MB (beats 46.73%)  
+**Submitted:** 2026-11-21T04:29:30.932Z  
 
 ```java
 class Solution {
