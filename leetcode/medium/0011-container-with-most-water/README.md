@@ -46,7 +46,7 @@ Output: 1
 **Language:** Java  
 **Runtime:** 4 ms (beats 95.23%)  
 **Memory:** 76.9 MB (beats 61.48%)  
-**Submitted:** 2026-11-22T00:47:47.712Z  
+**Submitted:** 2026-11-22T00:45:56.318Z  
 
 ```java
 class Solution {
@@ -77,11 +77,11 @@ class Solution {
         // return result;
         int l = 0; 
         int r = height.length-1;
-        
+        int minh = 0;
         int result = 0;
         while(l < r)
         {
-            int minh = Math.min(height[l],height[r]);
+            minh = Math.min(height[l],height[r]);
 
             int width = r - l;
             int waterdensity = minh * width;
