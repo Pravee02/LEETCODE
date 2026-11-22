@@ -30,29 +30,23 @@ class Solution {
         int result = 0;
         while(l < r)
         {
-            if(height[l] <= height[r])
-                {
-                    minh = height[l];
-                }
-                else
-                {
-                    minh = height[r];
-                }
-                int width = r - l;
-                int waterdensity = minh * width;
-                if(waterdensity > result)
-                {
-                    result = waterdensity;
-                }
+            int minheight = Math.min(height[l],height[r]);
 
-                if(height[l] <= height[r])
-                {
-                    l++;
-                }
-                else
-                {
-                   r--;
-                }
+            int width = r - l;
+            int waterdensity = minh * width;
+            if(waterdensity > result)
+            {
+                result = waterdensity;
+            }
+
+            if(height[l] <= height[r])
+            {
+                l++;
+            }
+            else
+            {
+                r--;
+            }
         }
         return result;
     }
