@@ -26,11 +26,11 @@ class Solution {
         // return result;
         int l = 0; 
         int r = height.length-1;
-        int minh = 0;
+        
         int result = 0;
         while(l < r)
         {
-            int minheight = Math.min(height[l],height[r]);
+            int minh = Math.min(height[l],height[r]);
 
             int width = r - l;
             int waterdensity = minh * width;
