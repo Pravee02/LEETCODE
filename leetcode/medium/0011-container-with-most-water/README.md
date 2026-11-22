@@ -44,21 +44,44 @@ Output: 1
 ## Solution
 
 **Language:** Java  
-**Runtime:** 0 ms  
-**Memory:** 41.6 MB  
-**Submitted:** 2026-11-21T15:44:45.272Z  
+**Runtime:** 4 ms (beats 95.23%)  
+**Memory:** 76.8 MB (beats 72.08%)  
+**Submitted:** 2026-11-22T00:42:08.024Z  
 
 ```java
 class Solution {
     public int maxArea(int[] height) {
         
-        int minh = 0; 
+        // int minh = 0; 
+        // int result = 0;
+        // for(int l = 0; l < height.length-1; l++)
+        // {
+        //     for(int r = l + 1 ; r < height.length; r++)
+        //     {
+        //         if(height[l] <= height[r])
+        //         {
+        //             minh = height[l];
+        //         }
+        //         else
+        //         {
+        //             minh = height[r];
+        //         }
+        //         int width = r - l;
+        //         int waterdensity = minh * width;
+        //         if(waterdensity > result)
+        //         {
+        //             result = waterdensity;
+        //         }
+        //     }
+        // }
+        // return result;
+        int l = 0; 
+        int r = height.length-1;
+        int minh = 0;
         int result = 0;
-        for(int l = 0; l < height.length-1; l++)
+        while(l < r)
         {
-            for(int r = 1; r < height.length; r++)
-            {
-                if(height[l] <= height[r])
+            if(height[l] <= height[r])
                 {
                     minh = height[l];
                 }
@@ -72,7 +95,15 @@ class Solution {
                 {
                     result = waterdensity;
                 }
-            }
+
+                if(height[l] <= height[r])
+                {
+                    l++;
+                }
+                else
+                {
+                   r--;
+                }
         }
         return result;
     }
