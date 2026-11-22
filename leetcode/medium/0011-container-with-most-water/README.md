@@ -44,9 +44,9 @@ Output: 1
 ## Solution
 
 **Language:** Java  
-**Runtime:** 4 ms (beats 95.23%)  
-**Memory:** 76.8 MB (beats 72.08%)  
-**Submitted:** 2026-11-22T00:42:08.024Z  
+**Runtime:** 0 ms  
+**Memory:** 41.6 MB  
+**Submitted:** 2026-11-22T00:45:27.750Z  
 
 ```java
 class Solution {
@@ -81,29 +81,23 @@ class Solution {
         int result = 0;
         while(l < r)
         {
-            if(height[l] <= height[r])
-                {
-                    minh = height[l];
-                }
-                else
-                {
-                    minh = height[r];
-                }
-                int width = r - l;
-                int waterdensity = minh * width;
-                if(waterdensity > result)
-                {
-                    result = waterdensity;
-                }
+            int minheight = Math.min(height[l],height[r]);
 
-                if(height[l] <= height[r])
-                {
-                    l++;
-                }
-                else
-                {
-                   r--;
-                }
+            int width = r - l;
+            int waterdensity = minh * width;
+            if(waterdensity > result)
+            {
+                result = waterdensity;
+            }
+
+            if(height[l] <= height[r])
+            {
+                l++;
+            }
+            else
+            {
+                r--;
+            }
         }
         return result;
     }
