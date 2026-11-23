@@ -53,19 +53,28 @@ There are no 'a's, hence, every 'a' appears before every 'b' and we return true.
 
 **Language:** Java  
 **Runtime:** 1 ms (beats 54.82%)  
-**Memory:** 42.5 MB (beats 45.53%)  
-**Submitted:** 2026-11-23T10:59:46.208Z  
+**Memory:** 42.2 MB (beats 82.81%)  
+**Submitted:** 2026-11-23T11:06:16.809Z  
 
 ```java
 class Solution {
     public boolean checkString(String s) {
         
-        for(int i = 0; i < s.length()-1; i++)
+        // for(int i = 0; i < s.length()-1; i++)
+        // {
+        //     if(s.charAt(i) == 'b' && s.charAt(i+1) == 'a')
+        //     return false;
+        // }
+        // return true;
+        char[] chars = s.toCharArray();
+        Arrays.sort(chars);
+        boolean isSorted = s.equals(new String(chars));
+        if(isSorted)
         {
-            if(s.charAt(i) == 'b' && s.charAt(i+1) == 'a')
-            return false;
+            return  true;
         }
-        return true;
+        return false;
+
     }
 }
 ```
