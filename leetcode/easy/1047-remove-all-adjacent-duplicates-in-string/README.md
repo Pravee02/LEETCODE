@@ -42,9 +42,9 @@ Output: "ay"
 ## Solution
 
 **Language:** Java  
-**Runtime:** 10 ms (beats 96.48%)  
-**Memory:** 46.2 MB (beats 88.23%)  
-**Submitted:** 2026-11-26T05:39:27.841Z  
+**Runtime:** 8 ms (beats 96.87%)  
+**Memory:** 46.2 MB (beats 85.94%)  
+**Submitted:** 2026-11-26T05:41:58.535Z  
 
 ```java
 class Solution {
@@ -86,7 +86,7 @@ class Solution {
                 push(s.charAt(i));
             }
         }
-        StringBuffer newString= new  StringBuffer("");
+        StringBuilder newString= new  StringBuilder("");
         for(int i = top ; i >=0 ; i--)
         {
         char ch = pop();
