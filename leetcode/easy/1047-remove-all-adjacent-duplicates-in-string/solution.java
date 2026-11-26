@@ -37,7 +37,7 @@ class Solution {
                 push(s.charAt(i));
             }
         }
-        StringBuffer newString= new  StringBuffer("");
+        StringBuilder newString= new  StringBuilder("");
         for(int i = top ; i >=0 ; i--)
         {
         char ch = pop();
